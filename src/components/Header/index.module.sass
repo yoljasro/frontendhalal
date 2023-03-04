@@ -1,0 +1,104 @@
+@import ../../styles/variables, ../../styles/mixins
+
+.cont
+    width: 100%
+    height: 720px   
+    background-repeat: no-repeat
+    background-size: cover
+    object-fit: contain
+    backface-visibility: hidden
+    overflow: hidden
+
+    &__map
+        display: flex
+        flex-direction: column
+
+        &__img
+            width: 100%
+            & img
+                width: 100%
+
+    &__location
+        background: #2F2F2F
+        border-radius: 6px
+        position: relative
+        top: 200px
+        left: 200px
+        font-family: ExoBold
+        font-size: 16px
+        font-weight: 700
+        line-height: 36px
+        text-align: center
+        color: #FFFFFF
+        // padding: 7px 17px 6px 11px
+        width: 100%
+        max-width: 294px
+        height: 40px
+
+    &__region
+        position: relative
+        background: #2F2F2F
+        backdrop-filter: blur(10px)
+        height: 39px
+        max-width: 128px
+        width: 100%
+        border-radius: 6px
+        font-family: ExoBold
+        font-size: 16px
+        font-weight: 400
+        line-height: 36px
+        letter-spacing: 0em
+        color: #FFFFFF
+        padding-left: 21px
+        padding-top: 6px
+
+    &__info
+        height: 419px
+        backdrop-filter: blur(10px)
+        max-width: 674px
+        width: 100%
+        border-radius: 10px
+        padding-left: 40px
+        overflow: hidden
+        position: relative
+        // top: -500px
+        bottom: 625px
+        left: 80px
+        background: #4E4E4E99
+
+        &__title
+            font-family: ExoBold
+            color: red
+            font-size: 48px
+            font-weight: 700
+            line-height: 58px
+            color: #00E376
+            padding-top: 20px
+
+            & span
+                color: $white
+
+        &__description
+            font-family: ExoExtraLight
+            font-size: 22px
+            font-weight: 400
+            line-height: 30px
+            color: $white
+            padding-top: 20px
+
+        &__btn
+            padding: 16px 63px
+            background: #3D3D3D
+            margin-top: 40px
+            border: none
+            font-family: ExoExtraLight
+            color: $white
+            font-size: 24px
+            font-weight: 500
+            line-height: 29px
+            border-radius: 6px
+
+            &:hover
+                background: #0b4982c9
+                cursor: pointer
+                transition: 1s all
